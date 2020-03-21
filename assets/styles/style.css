@@ -52,6 +52,7 @@ a:hover {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+/* =================================================== GENERAL - Media Queries */
 @media screen and (min-width: 992px) {
   body {
     display: -ms-grid;
@@ -106,6 +107,7 @@ a:hover {
   font-size: 1.3rem;
 }
 
+/* =================================================== MAIN - Media Queries */
 @media screen and (min-width: 768px) {
   .collection-container {
     -ms-grid-columns: 1fr 1fr;

@@ -64,6 +64,8 @@ a:hover {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+/* =================================================== GENERAL - Media Queries */
+
 @media screen and (min-width: $breakpoint-desktop) {
   body {
     display: grid;
@@ -118,6 +120,8 @@ a:hover {
   line-height: 1.6;
   font-size: 1.3rem;
 }
+
+/* =================================================== MAIN - Media Queries */
 
 @media screen and (min-width: $breakpoint-tablet) {
   .collection-container {
