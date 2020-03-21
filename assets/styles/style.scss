@@ -68,7 +68,7 @@ a:hover {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* =================================================== GENERAL - Media Queries */
+/* --------------------------------------------------- GENERAL - Media Queries */
 
 @media screen and (min-width: $breakpoint-desktop) {
   body {
@@ -82,6 +82,13 @@ a:hover {
   aside {
     height: 100vh;
   }
+}
+
+/* =================================================== MAIN */
+
+.capstone-logo {
+  width: 140px;
+  height: 19px;
 }
 
 /* =================================================== MAIN */
@@ -125,7 +132,7 @@ a:hover {
   font-size: 1.3rem;
 }
 
-/* =================================================== MAIN - Media Queries */
+/* --------------------------------------------------- MAIN - Media Queries */
 
 @media screen and (min-width: $breakpoint-tablet) {
   .collection-container {
