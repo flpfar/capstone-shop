@@ -81,19 +81,19 @@ a:hover {
   width: 100%;
 }
 
-.collection1__img1 {
+.collection__item1 .collection__img1 {
   background: #f5f5f5 url("../images/model.png") center/contain no-repeat;
 }
 
-.collection1__img2 {
+.collection__item1 .collection__img2 {
   background: #f5f5f5 url("../images/model2.png") bottom center/cover no-repeat;
 }
 
-.collection2__img1 {
+.collection__item2 .collection__img1 {
   background: #f5f5f5 url("../images/model2.png") bottom center/cover no-repeat;
 }
 
-.collection2__img2 {
+.collection__item2 .collection__img2 {
   background: #f5f5f5 url("../images/model.png") center/contain no-repeat;
 }
 

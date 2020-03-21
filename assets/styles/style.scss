@@ -64,10 +64,6 @@ a:hover {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-@media screen and (min-width: $breakpoint-tablet) {
-  
-}
-
 @media screen and (min-width: $breakpoint-desktop) {
   body {
     display: grid;
@@ -94,22 +90,25 @@ a:hover {
   width: 100%;
 }
 
-.collection1__img1 {
-  background: $background-primary url("../images/model.png") center/contain no-repeat;
+.collection__item1 {
+  .collection__img1 {
+    background: $background-primary url("../images/model.png") center/contain no-repeat;
+  }
+
+  .collection__img2 {
+    background: $background-primary url("../images/model2.png") bottom center/cover no-repeat;
+  }
 }
 
-.collection1__img2 {
-  background: $background-primary url("../images/model2.png") bottom center/cover no-repeat;
-}
+.collection__item2 {
+  .collection__img1 {
+    background: $background-primary url("../images/model2.png") bottom center/cover no-repeat;
+  }
 
-.collection2__img1 {
-  background: $background-primary url("../images/model2.png") bottom center/cover no-repeat;
+  .collection__img2 {
+    background: $background-primary url("../images/model.png") center/contain no-repeat;
+  }
 }
-
-.collection2__img2 {
-  background: $background-primary url("../images/model.png") center/contain no-repeat;
-}
-
 
 .collection__text-box {
   height: 100%;
