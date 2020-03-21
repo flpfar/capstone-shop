@@ -31,6 +31,10 @@ $breakpoint-desktop: 992px;
 
 /* =================================================== GENERAL */
 
+html {
+  font-size: 62.5%; /* Only for convenient using of rem similar to px (1.6rem = 16px) */
+}
+
 body {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: $color-primary;
@@ -62,7 +66,8 @@ a {
 }
 
 a:hover {
-  color: $color-primary;
+  color: $color-secondary;
+  text-decoration: none;
 }
 
 .hidden {
@@ -86,11 +91,61 @@ a:hover {
   }
 }
 
-/* =================================================== MAIN */
+/* =================================================== HEADER */
 
-.capstone-logo {
-  width: 140px;
-  height: 19px;
+.header {
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  .menu-icon {
+    width: 30px;
+    height: 15px;
+  }
+
+  &__top {
+    flex-basis: 48%;
+    font-size: 1.8rem;
+
+    .capstone-logo {
+      width: 140px;
+      height: 19px;
+    }
+
+    .categories {
+      height: 60%;
+      list-style: none;
+
+      &__item {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &__center {
+    .menu-link {
+      &:hover {
+        color: $color-primary;
+        filter: brightness(3);
+      }
+    }
+
+    .menu-icon {
+      width: 20px;
+      height: 10px;
+    }
+  }
+
+  &__bottom {
+    flex-basis: 48%;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .socials {
+      &__item {
+        margin-bottom: 2rem;
+      }
+    }
+  }
 }
 
 /* =================================================== MAIN */
@@ -126,12 +181,15 @@ a:hover {
 }
 
 .collection__text-box {
+  padding: 6rem;
   height: 100%;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
-.collection__header {
+.collection__heading {
   line-height: 1.6;
-  font-size: 1.3rem;
+  font-size: 2.4rem;
 }
 
 /* --------------------------------------------------- MAIN - Media Queries */

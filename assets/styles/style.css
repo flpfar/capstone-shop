@@ -19,6 +19,11 @@
 }
 
 /* =================================================== GENERAL */
+html {
+  font-size: 62.5%;
+  /* Only for convenient using of rem similar to px (1.6rem = 16px) */
+}
+
 body {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #313131;
@@ -50,7 +55,8 @@ a {
 }
 
 a:hover {
-  color: #313131;
+  color: #b9b9b9;
+  text-decoration: none;
 }
 
 .hidden {
@@ -75,10 +81,62 @@ a:hover {
   }
 }
 
-/* =================================================== MAIN */
-.capstone-logo {
+/* =================================================== HEADER */
+.header {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.header .menu-icon {
+  width: 30px;
+  height: 15px;
+}
+
+.header__top {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  font-size: 1.8rem;
+}
+
+.header__top .capstone-logo {
   width: 140px;
   height: 19px;
+}
+
+.header__top .categories {
+  height: 60%;
+  list-style: none;
+}
+
+.header__top .categories__item {
+  margin-bottom: 3rem;
+}
+
+.header__center .menu-link:hover {
+  color: #313131;
+  -webkit-filter: brightness(3);
+          filter: brightness(3);
+}
+
+.header__center .menu-icon {
+  width: 20px;
+  height: 10px;
+}
+
+.header__bottom {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header__bottom .socials__item {
+  margin-bottom: 2rem;
 }
 
 /* =================================================== MAIN */
@@ -111,12 +169,15 @@ a:hover {
 }
 
 .collection__text-box {
+  padding: 6rem;
   height: 100%;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
-.collection__header {
+.collection__heading {
   line-height: 1.6;
-  font-size: 1.3rem;
+  font-size: 2.4rem;
 }
 
 /* --------------------------------------------------- MAIN - Media Queries */
