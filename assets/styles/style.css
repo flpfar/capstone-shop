@@ -32,6 +32,8 @@ header {
 main {
   height: calc(100vh - 50px);
   overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 main::-webkit-scrollbar {
