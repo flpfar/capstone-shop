@@ -1,4 +1,16 @@
-/* FONTS FACES */
+/* =================================================== VARIABLES */
+
+$color-primary: #313131;
+$color-secondary: #b9b9b9;
+
+$background-primary: #f5f5f5;
+$background-secondary: #fff;
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+
+/* =================================================== FONT FACES */
+
 @font-face {
   font-family: "Helvetica Neue";
   src: url("../fonts/helvetica-neue.ttf");
@@ -15,4 +27,98 @@
   font-family: "Helvetica Neue";
   src: url("../fonts/helvetica-neue-condensed-bold.ttf");
   font-weight: 700;
+}
+
+/* =================================================== GENERAL */
+
+body {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: $color-primary;
+}
+
+header {
+  height: 50px;
+  background-color: black;
+}
+
+main {
+  height: calc(100vh - 50px);
+  background-color: $background-primary;
+}
+
+aside {
+  height: 50px;
+  background-color: red;
+}
+
+a {
+  color: $color-primary;
+}
+
+a:hover {
+  color: $color-primary;
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  body {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 50% 50%;
+  }
+
+  header,
+  main,
+  aside {
+    height: 100vh;
+  }
+}
+
+/* =================================================== MAIN */
+
+.bg-img {
+  width: 100%;
+  background: url("../images/model.png") center/contain no-repeat;
+}
+
+.bg-img2 {
+  width: 100%;
+  background: url("../images/model2.png") bottom center/contain no-repeat;
+}
+
+.collection {
+  height: 30%;
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .bg-img {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    background-size: 60%;
+    background-position: center left;
+  }
+
+  .collection {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 2;
+    background-color: lightcoral;
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .bg-img {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background-size: contain;
+    background-position: center bottom;
+  }
 }
