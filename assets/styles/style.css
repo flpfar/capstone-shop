@@ -151,9 +151,12 @@ a:hover {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  font-weight: 600;
 }
 
 .aside__top {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
   font-size: 1.8rem;
 }
 
@@ -162,7 +165,6 @@ a:hover {
 }
 
 .aside__top .cart {
-  font-weight: 600;
   font-size: 1.4rem;
 }
 
@@ -187,7 +189,6 @@ a:hover {
 .aside__top__item:hover::before {
   margin-right: 1rem;
   font-size: 1.4rem;
-  font-weight: 600;
 }
 
 .aside__top .search:hover::before {
@@ -196,6 +197,46 @@ a:hover {
 
 .aside__top .profile:hover::before {
   content: 'Profile';
+}
+
+.aside__center .collection-nav {
+  margin-bottom: 1rem;
+  line-height: 1;
+  font-size: 1.4rem;
+}
+
+.aside__center .collection-nav .dots {
+  display: inline-block;
+  background-color: #313131;
+  border-radius: 40%;
+  width: 1rem;
+  height: 0.5rem;
+}
+
+.aside__center .collection-nav .active {
+  width: 2rem;
+  border-radius: 30%;
+  margin-left: 2rem;
+}
+
+.aside__center .collection-nav:hover .dots {
+  color: #b9b9b9;
+  background-color: #b9b9b9;
+}
+
+.aside__bottom {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.aside__bottom .scroll__text {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: mixed;
 }
 
 /* =================================================== MAIN */

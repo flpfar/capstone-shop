@@ -157,9 +157,11 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    font-weight: 600;
   }
 
   &__top {
+    flex-basis: 48%;
     font-size: 1.8rem;
 
     &__item {
@@ -167,7 +169,6 @@ a:hover {
     }
 
     .cart {
-      font-weight: 600;
       font-size: 1.4rem;
 
       &__count {
@@ -192,7 +193,6 @@ a:hover {
     &__item:hover::before {
       margin-right: 1rem;
       font-size: 1.4rem;
-      font-weight: 600;
     }
 
     .search:hover::before {
@@ -203,6 +203,44 @@ a:hover {
       content: 'Profile';
     }
   }
+
+  &__center {
+    .collection-nav {
+      margin-bottom: 1rem;
+      line-height: 1;
+      font-size: 1.4rem;
+
+      .dots {
+        display: inline-block;
+        background-color: $color-primary;
+        border-radius: 40%;
+        width: 1rem;
+        height: 0.5rem;
+      }
+
+      .active {
+        width: 2rem;
+        border-radius: 30%;
+        margin-left: 2rem;
+      }
+
+      &:hover .dots {
+        color: $color-secondary;
+        background-color: $color-secondary;
+      }
+    }
+  }
+
+  &__bottom {
+    flex-basis: 48%;
+    justify-content: flex-end;
+
+    .scroll__text {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+    }
+  }
+
 }
 
 /* =================================================== MAIN */
