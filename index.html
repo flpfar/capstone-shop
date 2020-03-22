@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/8e996abce9.js"></script>
+
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/styles/reset.css">
   <link rel="stylesheet" href="/assets/styles/style.css">
@@ -65,7 +68,15 @@
       </div>
     </article>
   </main>
-  <aside class="d-none d-lg-block"></aside>
+  <aside class="aside p-5 d-none d-lg-flex flex-column align-items-end">
+    <div class="aside__top">
+      <a class="aside__top__item cart" href="">Cart <span class="cart__count">0</span></a>
+      <a class="aside__top__item search" href=""><i class="fas fa-search"></i></a>
+      <a class="aside__top__item profile" href=""><i class="far fa-user"></i></a>
+    </div>
+    <div class="aside__center"></div>
+    <div class="aside__bottom"></div>
+  </aside>
 
 
   <!-- Optional JavaScript -->

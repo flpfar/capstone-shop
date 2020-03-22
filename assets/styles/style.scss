@@ -148,6 +148,63 @@ a:hover {
   }
 }
 
+/* =================================================== ASIDE */
+
+.aside {
+  &__top,
+  &__center,
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__top {
+    font-size: 1.8rem;
+
+    &__item {
+      margin-bottom: 3rem;
+    }
+
+    .cart {
+      font-weight: 600;
+      font-size: 1.4rem;
+
+      &__count {
+        display: inline-block;
+        width: 3.4rem;
+        height: 3.4rem;
+        margin-right: -0.6rem;
+        margin-left: 1rem;
+        line-height: 3.4rem;
+        text-align: center;
+        background-color: $color-primary;
+        color: $background-secondary;
+        border-radius: 50%;
+      }
+
+      &:hover .cart__count {
+        color: $color-secondary;
+        background-color: $background-primary;
+      }
+    }
+
+    &__item:hover::before {
+      margin-right: 1rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    .search:hover::before {
+      content: 'Search';
+    }
+
+    .profile:hover::before {
+      content: 'Profile';
+    }
+  }
+}
+
 /* =================================================== MAIN */
 
 .collection-container {
