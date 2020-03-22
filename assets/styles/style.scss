@@ -276,10 +276,10 @@ a:hover {
 }
 
 .collection__text-box {
-  padding: 6rem;
   height: 100%;
   font-size: 1.8rem;
   font-weight: 600;
+  padding: 3rem;
 }
 
 .collection__heading {
@@ -322,5 +322,9 @@ a:hover {
     grid-row: 1 / 3;
     background-size: cover;
     background-position: center bottom;
+  }
+
+  .collection__text-box {
+    padding: 6rem;
   }
 }
