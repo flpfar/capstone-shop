@@ -59,6 +59,10 @@ a:hover {
   text-decoration: none;
 }
 
+.active {
+  color: #b9b9b9;
+}
+
 .hidden {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
@@ -239,7 +243,7 @@ a:hover {
   text-orientation: mixed;
 }
 
-/* =================================================== MAIN */
+/* =================================================== MAIN - INDEX */
 .collection-container {
   display: -ms-grid;
   display: grid;
@@ -327,4 +331,6 @@ a:hover {
     padding: 6rem;
   }
 }
+
+/* =================================================== MAIN - CATEGORY */
 /*# sourceMappingURL=style.css.map */

@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  
+
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/8e996abce9.js"></script>
 
@@ -22,12 +22,13 @@
 
 <body>
   <!-- ===== HEADER ===== -->
-  <header class="header px-5 d-flex justify-content-between align-items-center p-lg-5 flex-lg-column justify-content-lg-stretch align-items-lg-start">
+  <header
+    class="header px-5 d-flex justify-content-between align-items-center p-lg-5 flex-lg-column justify-content-lg-stretch align-items-lg-start">
     <!-- === HEADER TOP === -->
     <div class="header__top d-flex flex-column justify-content-between">
       <img class="capstone-logo" src="/assets/images/capstone-logo.png" alt="Capstone Shop Logo">
       <ul class="categories d-none d-lg-block">
-        <li class="categories__item"><a href="/category.html" class="categories__link">Men</a></li>
+        <li class="categories__item"><a href="/category.html" class="categories__link active">Men</a></li>
         <li class="categories__item"><a href="/category.html" class="categories__link">Women</a></li>
       </ul>
     </div>
@@ -52,25 +53,9 @@
 
   <!-- ===== MAIN ===== -->
   <main>
-    <h1 class="hidden">T-Shirst Collection</h1>
     <!-- === MAIN ITEM 1 === -->
-    <article id="collection__item1" class="collection__item1 collection-container position-relative h-100">
-      <div class="collection__img1"></div>
-      <div class="collection__img2 d-none d-lg-block"></div>
-      <div class="collection__text-box d-flex flex-column justify-content-between">
-        <h2 class="collection__heading font-weight-bold">SUMMER HIGHER CAPS<br>COLLECTION</h2>
-        <a href="">Shop Now</a>
-      </div>
-    </article>
-    <!-- === MAIN ITEM 2 === -->
-    <article id="collection__item2" class="collection__item2 collection-container position-relative h-100">
-      <div class="collection__img1"></div>
-      <div class="collection__img2 d-none d-lg-block"></div>
-      <div class="collection__text-box d-flex flex-column justify-content-between">
-        <h2 class="collection__heading font-weight-bold">ALWAYS THAT GOOD<br>COLLECTION</h2>
-        <a href="">Shop Now</a>
-      </div>
-    </article>
+    <h1 class="hidden">Categories</h1>
+    
   </main>
   <!-- ===== ASIDE ===== -->
   <aside class="aside p-5 d-none d-lg-flex flex-column justify-content-between align-items-end">
@@ -79,11 +64,6 @@
       <a class="aside__top__item cart" href="">Cart <span class="cart__count">0</span></a>
       <a class="aside__top__item search" href=""><i class="fas fa-search"></i></a>
       <a class="aside__top__item profile" href=""><i class="far fa-user"></i></a>
-    </div>
-    <!-- === ASIDE CENTER === -->
-    <div class="aside__center">
-      <a href="#collection__item1" class="collection-nav">01 / 02<span class="dots active"></span></a>
-      <a href="#collection__item2" class="collection-nav"><span class="dots"></span></a>
     </div>
     <!-- === ASIDE BOTTOM === -->
     <div class="aside__bottom">

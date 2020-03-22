@@ -70,6 +70,10 @@ a:hover {
   text-decoration: none;
 }
 
+.active {
+  color: $color-secondary;
+}
+
 .hidden {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
@@ -240,10 +244,9 @@ a:hover {
       text-orientation: mixed;
     }
   }
-
 }
 
-/* =================================================== MAIN */
+/* =================================================== MAIN - INDEX */
 
 .collection-container {
   display: grid;
@@ -328,3 +331,5 @@ a:hover {
     padding: 6rem;
   }
 }
+
+/* =================================================== MAIN - CATEGORY */
