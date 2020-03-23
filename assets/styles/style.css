@@ -492,19 +492,57 @@ a:hover {
 
 .product-grid .size__link {
   color: #b9b9b9;
+  padding: 1.5rem;
 }
 
 .product-grid .size__link:hover {
-  color: #313131;
+  background-color: #313131;
 }
 
 .product-grid .size__link--active {
   color: #313131;
+  cursor: default;
+}
+
+.product-grid .size__link--active:hover {
+  background-color: #f5f5f5;
 }
 
 .product-grid .details__text {
   margin-top: 2rem;
   line-height: 1.5;
+}
+
+.product-grid .cart-bar {
+  padding: 0;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.product-grid .cart-bar__plus {
+  width: 25%;
+  border-right: 2px solid #fff;
+}
+
+.product-grid .cart-bar__add {
+  width: 75%;
+}
+
+.product-grid .cart-bar__plus, .product-grid .cart-bar__add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-grid .cart-bar__plus:hover, .product-grid .cart-bar__add:hover {
+  background-color: #fff;
+  color: #313131;
 }
 
 /* --------------------------------------------------- MAIN - PRODUCT - Media Queries */
