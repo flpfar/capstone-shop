@@ -409,6 +409,7 @@ a:hover {
   height: 100%;
   grid-gap: 2px;
   grid-template-rows: 4fr 1fr 1fr 2fr 1fr;
+  font-size: 1.4rem;
 
   .grid-item {
     background-color: $background-primary;
@@ -423,6 +424,29 @@ a:hover {
       margin: 0 auto;
       object-fit: cover;
       max-height: 100%;
+    }
+
+    .img-controller-sm {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 95%;
+
+      .control-sm {
+        line-height: 0.5;
+        padding: 2rem;
+        background-color: $background-secondary;
+        color: $color-secondary;
+        border-radius: 50%;
+
+        &:hover {
+          background-color: $color-secondary;
+          color: $background-secondary;
+        }
+      }
     }
   }
 }

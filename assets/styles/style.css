@@ -418,6 +418,7 @@ a:hover {
   grid-gap: 2px;
   -ms-grid-rows: 4fr 1fr 1fr 2fr 1fr;
       grid-template-rows: 4fr 1fr 1fr 2fr 1fr;
+  font-size: 1.4rem;
 }
 
 .product-grid .grid-item {
@@ -435,6 +436,34 @@ a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   max-height: 100%;
+}
+
+.product-grid .main-img-container .img-controller-sm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 95%;
+}
+
+.product-grid .main-img-container .img-controller-sm .control-sm {
+  line-height: 0.5;
+  padding: 2rem;
+  background-color: #fff;
+  color: #b9b9b9;
+  border-radius: 50%;
+}
+
+.product-grid .main-img-container .img-controller-sm .control-sm:hover {
+  background-color: #b9b9b9;
+  color: #fff;
 }
 
 /* --------------------------------------------------- MAIN - PRODUCT - Media Queries */
