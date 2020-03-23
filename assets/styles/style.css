@@ -103,6 +103,10 @@ a:hover {
   font-size: 1.8rem;
 }
 
+.header__top .logo-link {
+  line-height: 0.5;
+}
+
 .header__top .capstone-logo {
   width: 140px;
   height: 19px;

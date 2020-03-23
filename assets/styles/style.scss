@@ -111,6 +111,10 @@ a:hover {
     flex-basis: 48%;
     font-size: 1.8rem;
 
+    .logo-link {
+      line-height: 0.5; //Remove spacing in logo bottom
+    }
+
     .capstone-logo {
       width: 140px;
       height: 19px;
