@@ -233,6 +233,10 @@ a:hover {
   background-color: #b9b9b9;
 }
 
+.aside__center .catalogue-back {
+  font-size: 1.4rem;
+}
+
 .aside__bottom {
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
