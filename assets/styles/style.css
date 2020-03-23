@@ -466,6 +466,47 @@ a:hover {
   color: #fff;
 }
 
+.product-grid .info {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.product-grid .info__heading {
+  font-weight: 700;
+}
+
+.product-grid .info__feature {
+  color: #b9b9b9;
+  font-size: 1.4rem;
+}
+
+.product-grid .size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+}
+
+.product-grid .size__link {
+  color: #b9b9b9;
+}
+
+.product-grid .size__link:hover {
+  color: #313131;
+}
+
+.product-grid .size__link--active {
+  color: #313131;
+}
+
+.product-grid .details__text {
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+
 /* --------------------------------------------------- MAIN - PRODUCT - Media Queries */
 @media screen and (min-width: 768px) {
   .product__pics {

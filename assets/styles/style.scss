@@ -449,6 +449,45 @@ a:hover {
       }
     }
   }
+
+  .info {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    &__heading {
+      font-weight: 700;
+    }
+
+    &__feature {
+      color: $color-secondary;
+      font-size: 1.4rem;
+    }
+  }
+
+  .size {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+
+    &__link {
+      color: $color-secondary;
+
+      &:hover {
+        color: $color-primary;
+      }
+
+      &--active {
+        color: $color-primary;
+      }
+    }
+  }
+
+  .details {
+    &__text {
+      margin-top: 2rem;
+      line-height: 1.5;
+    }
+  }
 }
 
 /* --------------------------------------------------- MAIN - PRODUCT - Media Queries */
