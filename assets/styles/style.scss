@@ -50,6 +50,7 @@ main {
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
 main::-webkit-scrollbar {
@@ -333,3 +334,56 @@ a:hover {
 }
 
 /* =================================================== MAIN - CATEGORY */
+
+.category-heading {
+  margin-top: 3rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  height: 50vh;
+  background-color: $background-primary;
+
+  &__img {
+    width: 100%;
+    height: 86%;
+    object-fit: contain;
+  }
+
+  &__name,
+  &__price {
+    font-weight: 600;
+  }
+
+  &:hover {
+    background-color: $background-secondary;
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .category-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .category-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .product {
+    height: 25vw;
+  }
+}
