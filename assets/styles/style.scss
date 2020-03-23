@@ -538,6 +538,11 @@ a:hover {
       object-fit: contain;
       height: calc(25% - 2px);
       margin: 1px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $background-secondary;
+      }
     }
   }
 

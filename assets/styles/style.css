@@ -567,6 +567,10 @@ a:hover {
        object-fit: contain;
     height: calc(25% - 2px);
     margin: 1px;
+    cursor: pointer;
+  }
+  .product__pics__img:hover {
+    background-color: #fff;
   }
   .product-grid {
     width: 75vw;
