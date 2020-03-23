@@ -61,8 +61,15 @@
       <img class="product__pics__img" src="/assets/images/products/img5.png" alt="Product Picture">
     </div>
     <div class="product-grid float-md-left float-lg-none">
-      <div class="main-img grid-item"></div>
-      <div class="info">
+      <div class="main-img-container position-relative grid-item">
+        <img class="main-img" src="/assets/images/products/img1.png" alt="Product Picture">
+        <div class="img-controller d-none d-lg-flex align-items-center justify-content-end">
+          <span class="current-img">01/05</span>
+          <a class="prev control" href="">Prev</a>
+          <a class="next control" href="">Next</a>
+        </div>
+      </div>
+      <div class="info grid-item">
         <h1 class="info__heading">COOL SUMMER</h1>
         <span class="info__feature">SOFT COTTOM</span>
         <span class="info__price">39 USD</span>
@@ -80,7 +87,7 @@
         <h2>DETAILS</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis, sequi aperiam adipisci veniam dolores inventore, et distinctio unde excepturi eveniet ipsam quisquam quaerat odit nostrum magni animi. Amet consequatur, eius molestiae minus atque suscipit velit magnam repellat consectetur numquam!</p>
       </div>
-      <div class="cart">
+      <div class="cart grid-item">
         <a href="" class="cart__plus">+</a>
         <a href="" class="cart__add">Add to Cart</a>
       </div>
