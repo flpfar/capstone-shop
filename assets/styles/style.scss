@@ -421,12 +421,17 @@ a:hover {
       margin: 2px;
     }
   }
+
+  .product-grid {
+    display: grid;
+    width: 75vw;
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: $breakpoint-desktop) {
   .product__pics {
     flex-direction: row;
-    justify-content: space-between;
     width: 100%;
     height: 25%;
 

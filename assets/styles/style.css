@@ -434,6 +434,12 @@ a:hover {
     height: calc(25% - 4px);
     margin: 2px;
   }
+  .product-grid {
+    display: -ms-grid;
+    display: grid;
+    width: 75vw;
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -442,9 +448,6 @@ a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     width: 100%;
     height: 25%;
   }
