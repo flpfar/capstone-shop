@@ -195,16 +195,23 @@ a:hover {
   background-color: #f5f5f5;
 }
 
+.aside__top__item::before {
+  opacity: 0;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
 .aside__top__item:hover::before {
   margin-right: 1rem;
   font-size: 1.4rem;
+  opacity: 1;
 }
 
-.aside__top .search:hover::before {
+.aside__top .search::before {
   content: 'Search';
 }
 
-.aside__top .profile:hover::before {
+.aside__top .profile::before {
   content: 'Profile';
 }
 

@@ -199,16 +199,22 @@ a:hover {
       }
     }
 
+    &__item::before {
+      opacity: 0;
+      transition: 0.5s all;
+    }
+
     &__item:hover::before {
       margin-right: 1rem;
       font-size: 1.4rem;
+      opacity: 1;
     }
 
-    .search:hover::before {
+    .search::before {
       content: 'Search';
     }
 
-    .profile:hover::before {
+    .profile::before {
       content: 'Profile';
     }
   }
