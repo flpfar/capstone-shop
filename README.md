@@ -2,7 +2,7 @@
 
 > This is a [design based](https://www.behance.net/gallery/80392909/AXEL-ARIGATO-Website) shopping website, created to practice responsive layouts with media queries and bootstrap using a mobile first approach and Sass.
 
-![screenshot](images/screenshot.png)
+![screenshot](/assets/images/screenshot.png)
 
 - Total based on a sneakers shop design by [Dmitry Oxygen](https://dribbble.com/oxygen_dima)
 - Responsive layout: support to different screen sizes
