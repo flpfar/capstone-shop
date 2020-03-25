@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/8e996abce9.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/styles/reset.css">
+  <link rel="stylesheet" href="/assets/styles/style.css">
+
+  <title>Capstone Shop</title>
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header
+    class="header px-5 d-flex justify-content-between align-items-center p-lg-5 flex-lg-column justify-content-lg-stretch align-items-lg-start">
+    <!-- === HEADER TOP === -->
+    <div class="header__top d-flex flex-column justify-content-between">
+      <a class="logo-link" href="/index.html"><img class="capstone-logo" src="/assets/images/capstone-logo.png"
+          alt="Capstone Shop Logo"></a>
+      <ul class="categories d-none d-lg-block">
+        <li class="categories__item"><a href="/category.html" class="categories__link">Men</a></li>
+        <li class="categories__item"><a href="/category.html" class="categories__link">Women</a></li>
+      </ul>
+    </div>
+    <!-- === HEADER CENTER === -->
+    <div class="header__center d-none d-lg-block">
+      <a class="menu-link" href="#">
+        <img class="menu-icon mr-3" src="/assets/images/menu-icon.png" alt="Menu Icon">
+        <span>Menu</span>
+      </a>
+    </div>
+    <!-- === HEADER BOTTOM === -->
+    <div class="header__bottom d-none d-lg-flex">
+      <ul class="socials">
+        <li class="socials__item"><a href="" class="socials__link">Instagram</a></li>
+        <li class="socials__item"><a href="" class="socials__link">Facebook</a></li>
+        <li class="socials__item"><a href="" class="socials__link">Twitter</a></li>
+        <li class="socials__item"><a href="" class="socials__link">Youtube</a></li>
+      </ul>
+    </div>
+    <img class="menu-icon d-lg-none" src="/assets/images/menu-icon.png" alt="Menu Icon">
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+    <div class="product__pics float-md-left float-lg-none">
+      <img class="product__pics__img" src="/assets/images/products/img2.png" alt="Product Picture">
+      <img class="product__pics__img" src="/assets/images/products/img3.png" alt="Product Picture">
+      <img class="product__pics__img" src="/assets/images/products/img4.png" alt="Product Picture">
+      <img class="product__pics__img" src="/assets/images/products/img5.png" alt="Product Picture">
+    </div>
+    <div class="product-grid float-md-left float-lg-none">
+      <div class="main-img-container position-relative grid-item">
+        <img class="main-img" src="/assets/images/products/img1.png" alt="Product Picture">
+        <div class="img-controller d-none d-lg-flex align-items-center justify-content-end">
+          <span class="current-img">01/05</span>
+          <a class="prev control" href="">Prev</a>
+          <a class="next control" href="">Next</a>
+        </div>
+        <div class="img-controller-sm d-lg-none">
+          <a class="control-sm" href="">&lt;</a>
+          <a class="control-sm" href="">&gt;</a>
+        </div>
+      </div>
+      <div class="info d-flex align-items-center justify-content-between grid-item">
+        <div>
+          <h1 class="info__heading pb-4">COOL SUMMER</h1>
+          <span class="info__feature pt-4">SOFT COTTOM</span>
+        </div>
+        <span class="info__price">39 USD</span>
+      </div>
+      <div class="size grid-item">
+        <ul class="size__list d-flex justify-content-between w-100">
+          <li class="size__item"><a href="" class="size__link">XS</a></li>
+          <li class="size__item"><a href="" class="size__link">S </a></li>
+          <li class="size__item"><a href="" class="size__link size__link--active">M</a></li>
+          <li class="size__item"><a href="" class="size__link">L</a></li>
+          <li class="size__item"><a href="" class="size__link">XL</a></li>
+        </ul>
+      </div>
+      <div class="details grid-item">
+        <h2 class="font-weight-bold">DETAILS</h2>
+        <p class="details__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis, sequi aperiam adipisci veniam dolores inventore, et distinctio unde excepturi eveniet ipsam quisquam quaerat odit nostrum magni animi.</p>
+      </div>
+      <div class="cart-bar d-flex grid-item">
+        <a href="" class="cart-bar__plus">+</a>
+        <a href="" class="cart-bar__add">Add to Cart</a>
+      </div>
+    </div>
+  </main>
+  <!-- ===== ASIDE ===== -->
+  <aside class="aside p-5 d-none d-lg-flex flex-column justify-content-between align-items-end">
+    <!-- === ASIDE TOP === -->
+    <div class="aside__top">
+      <a class="aside__top__item cart" href="">Cart <span class="cart__count">0</span></a>
+      <a class="aside__top__item search" href=""><i class="fas fa-search"></i></a>
+      <a class="aside__top__item profile" href=""><i class="far fa-user"></i></a>
+    </div>
+    <!-- === ASIDE CENTER === -->
+    <div class="aside__center">
+      <a href="/category.html" class="catalogue-back">Back to Catalogue</a>
+    </div>
+    <!-- === ASIDE BOTTOM === -->
+    <div class="aside__bottom">
+    </div>
+  </aside>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
