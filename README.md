@@ -15,6 +15,7 @@ The Capstone Shop contains three pages: Index.html, Category.html and Product.ht
 - Index.html -> Click on Capstone Shop logo (from any page)
 - Category.html -> Click on 'Men' (Available in desktop version, right below the logo)
 - Product.html -> Click on any product inside Category.html
+*It is not possible to reach Category.html on mobile and tablet versions, since the navgation collapse functionality was not implemented*
 
 *As this project was created in order to practice html and css design concepts, there are no functionalities included.*
 
