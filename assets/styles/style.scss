@@ -9,6 +9,8 @@ $background-secondary: #fff;
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 992px;
 
+$nav-height: 50px;
+
 /* =================================================== FONT FACES */
 
 @font-face {
@@ -36,17 +38,18 @@ html {
 }
 
 body {
+  padding-top: $nav-height;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: $color-primary;
 }
 
-header {
-  height: 50px;
+header,
+aside {
   background-color: $background-secondary;
 }
 
 main {
-  height: calc(100vh - 50px);
+  height: calc(100vh - #{$nav-height});
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -55,11 +58,6 @@ main {
 
 main::-webkit-scrollbar {
   display: none;
-}
-
-aside {
-  height: 50px;
-  background-color: $background-secondary;
 }
 
 a {
@@ -87,12 +85,42 @@ a:hover {
     display: grid;
     grid-template-columns: 200px 1fr 200px;
     grid-template-rows: 50% 50%;
+    padding-top: initial;
   }
 
   header,
   main,
   aside {
     height: 100vh;
+  }
+}
+
+/* =================================================== NAVBAR - Smaller Devices */
+
+.navbar {
+  background-color: $background-secondary;
+  font-weight: 600;
+  font-size: 1.4rem;
+
+  .navbar-brand {
+    line-height: 0.5;
+  }
+
+  .nav-item {
+    text-align: right;
+    padding: 5px 0;
+
+    .nav-active::before {
+      content: '> ';
+    }
+  }
+
+  .nav-socials {
+    font-size: 1.8rem;
+
+    &__item {
+      padding-left: 1rem;
+    }
   }
 }
 
