@@ -12,10 +12,9 @@
 - Icons from fontawesome.com
 
 The Capstone Shop contains three pages: Index.html, Category.html and Product.html. To reach these pages, use the following instructions:
-- Index.html -> Click on Capstone Shop logo (from any page)
-- Category.html -> Click on 'Men' (Available in desktop version, right below the logo) - *It is not possible to reach Category.html on mobile and tablet versions, since the navgation collapse functionality was not implemented*
+- Index.html -> Click on Capstone Shop logo or Home (from any page)
+- Category.html -> Click on 'Men'
 - Product.html -> Click on any product inside Category.html
-
 
 *As this project was created in order to practice html and css design concepts, there are no functionalities included.*
 
