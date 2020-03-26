@@ -25,12 +25,13 @@ html {
 }
 
 body {
+  padding-top: 50px;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #313131;
 }
 
-header {
-  height: 50px;
+header,
+aside {
   background-color: #fff;
 }
 
@@ -44,11 +45,6 @@ main {
 
 main::-webkit-scrollbar {
   display: none;
-}
-
-aside {
-  height: 50px;
-  background-color: #fff;
 }
 
 a {
@@ -78,12 +74,41 @@ a:hover {
         grid-template-columns: 200px 1fr 200px;
     -ms-grid-rows: 50% 50%;
         grid-template-rows: 50% 50%;
+    padding-top: initial;
   }
   header,
   main,
   aside {
     height: 100vh;
   }
+}
+
+/* =================================================== NAVBAR - Smaller Devices */
+.navbar {
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.navbar .navbar-brand {
+  line-height: 0.5;
+}
+
+.navbar .nav-item {
+  text-align: right;
+  padding: 5px 0;
+}
+
+.navbar .nav-item .nav-active::before {
+  content: '> ';
+}
+
+.navbar .nav-socials {
+  font-size: 1.8rem;
+}
+
+.navbar .nav-socials__item {
+  padding-left: 1rem;
 }
 
 /* =================================================== HEADER */

@@ -23,7 +23,7 @@
 <body>
   <!-- ===== HEADER ===== -->
   <header
-    class="header px-5 d-flex justify-content-between align-items-center p-lg-5 flex-lg-column justify-content-lg-stretch align-items-lg-start">
+    class="header px-5 d-none d-lg-flex justify-content-between align-items-center p-lg-5 flex-lg-column justify-content-lg-stretch align-items-lg-start">
     <!-- === HEADER TOP === -->
     <div class="header__top d-flex flex-column justify-content-between">
       <a class="logo-link" href="/index.html"><img class="capstone-logo" src="/assets/images/capstone-logo.png"
@@ -51,6 +51,30 @@
     </div>
     <img class="menu-icon d-lg-none" src="/assets/images/menu-icon.png" alt="Menu Icon">
   </header>
+
+  <!-- ===== NAVBAR (Small Screens) ===== -->
+  <nav class="navbar fixed-top d-lg-none py-4">
+    <a class="navbar-brand p-0" href="/index.html">
+      <img src="/assets/images/capstone-logo.png" alt="Capstone Shop Logo" width="140" height="20">
+    </a>
+    <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <img class="menu-icon" src="/assets/images/menu-icon.png" alt="Menu Icon" width="30" height="15">
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar-content">
+      <ul class="navbar-nav mr-auto mt-3 border-bottom">
+        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/category.html">Men</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Women</a></li>
+      </ul>
+      <ul class="nav-socials ml-auto mt-3 d-flex justify-content-end">
+        <li class="nav-socials__item"><a href="" class="nav-socials__link"><i class="fab fa-instagram"></i></a></li>
+        <li class="nav-socials__item"><a href="" class="nav-socials__link"><i class="fab fa-facebook"></i></a></li>
+        <li class="nav-socials__item"><a href="" class="nav-socials__link"><i class="fab fa-twitter"></i></a></li>
+        <li class="nav-socials__item"><a href="" class="nav-socials__link"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- ===== MAIN ===== -->
   <main>
